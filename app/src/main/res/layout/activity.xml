@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+android:background="#EAEAEA"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity">
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/status"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="Low Attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/statusColor"
+            android:background="#e74c3c"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/attendance"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:text="67%"
+                android:background="@drawable/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subjectTextView"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Mobile App Development"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/programmingCardView"
+                android:layout_marginRight="16dp"
+                android:onClick="programming"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:text="80%"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rect"/>
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Programming" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/appCardView"
+                android:onClick="app"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:text="67%"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rect"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App development" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/spmCardView"
+                android:layout_marginRight="16dp"
+                android:onClick="spm"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:text="95%"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rect"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Software Process" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/javaCardView"
+                android:onClick="java"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:text="87%"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rect"/>
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Java" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:onClick="csharp"
+                android:id="@+id/csharpCardView"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:text="95%"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rect"/>
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C# Programming" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/databaseCardView"
+                android:onClick="database"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:text="87%"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rect"/>
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginTop="60dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Database" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

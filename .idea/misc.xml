@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_launcher_background (copy).xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rounded_button_selector.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/soft_red_box.xml" value="0.234" />
+        <entry key="app/src/main/res/font/roboto_bold.xml" value="0.17222222222222222" />
+        <entry key="app/src/main/res/layout/absent_view.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/activity.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/activity_acad_cal.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/activity_attendance.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.3072916666666667" />
+        <entry key="app/src/main/res/layout/activity_date_format.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_faculty.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_register_student.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/course_item.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/courses_list_screen.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/current_view.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/default_view.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/enter_otp_screen.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/forgot_password_screen.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/list_view_item.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/login_screen.xml" value="0.176" />
+        <entry key="app/src/main/res/layout/marks_list_screen.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/marks_screen_obsolete.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/my_aad_calendar.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/new_password_screen.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/present.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/present_view.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/signup_screen.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/soft_red_box.xml" value="0.32447916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

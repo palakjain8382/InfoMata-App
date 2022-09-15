@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092991450566",
+    "project_id": "facapp-655d2",
+    "storage_bucket": "facapp-655d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092991450566:android:62538ea2dd16ef644146c7",
+        "android_client_info": {
+          "package_name": "com.example.facapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092991450566-gt12gncie02nd86lvap7jj35nr4v7gu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxSjQMWLIqh6V6OFeU67_CrZzlwyIAuVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092991450566-gt12gncie02nd86lvap7jj35nr4v7gu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

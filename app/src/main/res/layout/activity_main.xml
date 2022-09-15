@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/soft_red"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/faculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Faculty"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facultyImage" />
+
+    <!-- Circular Image View -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/facultyImage"
+        android:layout_width="193dp"
+        android:layout_height="198dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/fac1"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="355dp"
+        android:layout_height="353dp"
+        android:layout_marginTop="28dp"
+        android:stretchColumns="1"
+        app:layout_constraintTop_toBottomOf="@+id/faculty"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp">
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:padding="3dip"
+                android:text="Course"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="340dp" />
+
+            <TextView
+                android:id="@+id/courseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="CourseText"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/course"
+                tools:layout_editor_absoluteY="340dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/courseid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:padding="3dip"
+                android:text="CourseID"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="403dp" />
+
+            <TextView
+                android:id="@+id/courseidText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="courseidText"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/courseid"
+                tools:layout_editor_absoluteY="403dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="164dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:padding="3dip"
+                android:text="Mail"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="577dp" />
+
+            <TextView
+                android:id="@+id/mailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="mailText"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mail"
+                tools:layout_editor_absoluteY="577dp" />
+        </TableRow>
+
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:padding="3dip"
+                android:text="Office"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="462dp" />
+
+            <TextView
+                android:id="@+id/officeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="officeText"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/office"
+                tools:layout_editor_absoluteY="462dp" />
+        </TableRow>
+
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:padding="3dip"
+                android:text="Mobile"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="522dp" />
+
+            <TextView
+                android:id="@+id/mobileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="mobileText"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                tools:layout_editor_absoluteY="522dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

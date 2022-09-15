@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:background="#E8E7E7"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/soft_red"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <org.eazegraph.lib.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:padding="8dp"
+            app:egLegendTextSize="18sp"
+            app:egUsePieRotation="true"
+            app:egValueTextSize="24sp"/>
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:textSize="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Mobile App Development"
+            />
+
+
+        <TextView
+            android:id="@+id/faculty"
+            android:text="By Dr Srinivasan P"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/programmingCardView"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/totalClasses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="80%"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total No. of Classes" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/appCardView"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/classCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="67%"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="Classes Completed"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/spmCardView"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/classAttended"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:text="95%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="Total Classes Attended"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/javaCardView"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/classToAttend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="87%"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textColor="#000"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classes To Attend" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
